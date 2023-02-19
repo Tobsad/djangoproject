@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <h1 class="main-title">Practicando con Django</h1>
+    <section class="container usando-for"> 
+        <h2 class="subtitle">Ejercicios usando For</h2>
+        <h3 class="subtitle-list">Ejercicio 1</h3>
+        <p>Imprimir los primeros 10 números naturales:</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado1 }}</p>
+        
+        {% for i in resultado1%}
+        <li>{{i}}</li>
+        {% endfor %}
+
+        <h3 class="subtitle-list">Ejercicio 2</h3>
+        <p>Sumar los números naturales hasta el numero X, Obs:La computadora le dara valor de X y se sumaran los numeros naturales
+        </p>
+        
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado2 }}</p>
+        
+        <h3 class="subtitle-list">Ejercicio 3</h3>
+        <p>Se imprimira un nombre al azar de la siguiente lista de estudiantes:</p>
+        <p>["Ana", "Pedro", "María", "Juan","Christian","Mark","Sebastian","David"]</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado3 }}</p>
+
+        <h3 class="subtitle-list">Ejercicio 4</h3>
+        <p>Imprimir un ordinal al azar de los 5 primeros numeros.</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado4 }}</p>
+
+        <h3 class="subtitle-list">Ejercicio 5</h3>
+        <p>Calcular el factorial de un número:</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado5 }}</p> 
+
+    </section>
+
+
+    <section class="container usando-while"> 
+        <h2 class="subtitle">Ejercicios usando While</h2>
+        
+        <h3 class="subtitle-list">Ejercicio 1</h3>
+        <p>Encontrar el número más grande en una lista de números:</p>
+        <p>Lista=[23, 45, 67, 1, 34, 56, 78, 9]</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado6 }}</p>
+
+        <h3 class="subtitle-list">Ejercicio 2</h3>
+        <p>Imprimir un numero aleatorio del 1 al 50 y decir si es primo o no es primo:</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado7 }}</p>
+        
+        <h3 class="subtitle-list">Ejercicio 3</h3>
+        <p>Imprimir una cadena de caracteres de atrás hacia adelante:</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado8 }}</p>
+        
+        <h3 class="subtitle-list">Ejercicio 4</h3>
+        <p>Imprimir la serie de Fibonacci hasta un número dado por el usuario:</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado9 }}</p>
+        {% for i in resultado9%}
+        <li>{{i}}</li>
+        {% endfor %}
+
+        <h3 class="subtitle-list">Ejercicio 5</h3>
+        <p>Suma de los dígitos de un número dado por el usuario:</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado10 }}</p>
+    </section>
+
+    <section class="container usando-dowhile"> 
+        <h2 class="subtitle">Ejercicios usando Do-While</h2>
+        <h3 class="subtitle-list">Ejercicio 1</h3>
+        <p>Dinos si la palabra es palindroma</p>
+        <p>Dato: la palabra es "anitalavalatina"</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado11 }}</p>
+        
+        <h3 class="subtitle-list">Ejercicio 2</h3>
+        <p>Contar cuántas veces aparece una letra determinada:</p>
+        <p>Dato: la palabra es "esternocleidomastoideo" y la letra a determinar su cantidad es: "o".</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado12 }}</p>
+        
+        <h3 class="subtitle-list">Ejercicio 3</h3>
+        <p>Validar una contraseña: Crear un programa que solicite al usuario que ingrese una contraseña. 
+            Si la longitud de la contraseña es menor de 8 caracteres, el programa debe pedirle al usuario que ingrese 
+            una contraseña nuevamente. Una vez que se ingrese una contraseña de 8 o más caracteres, 
+            el programa imprimirá "Contraseña válida".</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado13 }}</p>
+        
+        <h3 class="subtitle-list">Ejercicio 4</h3>
+        <p>Adivinar un número: Crear un programa que genere un número aleatorio del 1 al 100 y solicite al usuario que adivine el número. Si el número adivinado es demasiado alto, el programa imprimirá "Demasiado alto". Si el número adivinado es demasiado bajo, el programa imprimirá "Demasiado bajo". Si el número adivinado es correcto, el programa imprimirá "¡Felicidades, lo has adivinado!".</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado14 }}</p>
+        
+        <h3 class="subtitle-list">Ejercicio 5</h3>
+        <p>Validar un usuario: Crear un programa que solicite al usuario que ingrese un nombre de usuario. Si el nombre de usuario es "Tobsad", el programa imprimirá "Acceso concedido". De lo contrario, el programa imprimirá "Acceso denegado".</p>
+        <p class="rpta">Respuesta:</p>
+        <p>{{ resultado15 }}</p>
+    
+    </section>
+</body>
+</html>

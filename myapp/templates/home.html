@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css cambiarlo-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="portada">
+        <div class="container">
+            <h1>Fundamentos de la Programación</h1>
+            <h2>2023</h2>
+            <img src="{% static 'imagenes/logo_unfv_md.png' %}" alt="logo_unfv">
+            <p>Docente: Ing. Jorge Lira Camargo </p>
+            <p>Estudiante: Said Eslander Torpoco Calzado </p>
+            <a class="enlace" href="{% url 'mi-url' %}">Ir a ejercicios</a>
+            <a class="enlace" href="https://www.youtube.com">Ir a la documentacion de los ejercicios</a>
+        </div>
+    </section>
+</body>
+</html>
